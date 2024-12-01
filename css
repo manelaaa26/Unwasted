@@ -1,0 +1,390 @@
+/*Format and styling goes here*/
+
+/* body is added to allow better web viewing as the original design is exported as PNG, thus launches on default image viewer based on the size.*/
+body {
+  background-color: #808080; 
+  margin: 0;
+  display: grid; 
+  justify-items: center; 
+  align-items: flex-start; 
+  height: 100vh; 
+  width: 100vw; 
+  box-sizing: border-box; 
+}
+
+/* replicates the file size of my original Photoshop design; size converted to px */
+.workspace {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr; 
+  width: 1296px; 
+  height: 1080px; 
+  background-color: #fdf3b6; 
+  border: 1px solid #434300; 
+  justify-items: center; 
+  align-items: center; 
+  box-sizing: border-box; 
+  margin-top: 72px; 
+}
+
+/*this defines my grid working area which replicates my grid in photoshop*/
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 297px); 
+  grid-column-gap: 12px; 
+  grid-template-rows: 204px repeat(16, 48px) 36px; 
+  width: 1296px; 
+  height: 1008px; 
+  padding: 36px; 
+  justify-items: center; 
+  align-items: start; 
+  box-sizing: border-box; 
+  margin: 0 auto; 
+  transform: translateY(-36px);
+}
+
+.line1, .line2, .line3, .line4 {
+  position: absolute;
+  width: 94.4%;
+  height: 12px;
+  background-color: #105708;
+}
+
+.line1 {
+  top: 22.22%;
+  left: 36px;
+}
+
+.line2 {
+  top: 42%;
+  left: 36px;
+}
+
+.line3 {
+  top: 79%;
+  left: 36px;
+}
+
+.line4 {
+  top: 102%;
+  left: 36px;
+  height: 16px;
+}
+
+.aod {
+  width: 240px;
+  height: 320px;
+  border: 5px solid #105708;
+  background-color: transparent;
+  margin-top: 70px;    
+  margin-left: 1770px;  
+}
+
+/* Advocacy section, added some weight as the transform doesn't completely worked as in Photoshop */
+.advocacy {
+  grid-row: 1; 
+  grid-column: 1 / 5; 
+  font-size: 230pt;
+  line-height: 1;
+  letter-spacing: 25px;
+  text-align: center;
+  margin-top: -48px;
+  font-family: "DM Serif Display", serif;
+  font-weight: bold;
+  color: #105708;
+  justify-self: center; 
+  align-self: center; 
+  transform: scaleX(0.79) scaleY(0.8);
+  transform-origin: left-top; 
+}
+
+
+.category {
+  font-family: "Inter", sans-serif; 
+  font-weight: 700; 
+  font-size: 36pt; 
+  line-height: 45pt; 
+  letter-spacing: 2.64px;
+  text-align: left; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  color: #105708; 
+  text-stroke: 1px #105708; 
+  transform: scaleX(0.79); scaleY(0.9); 
+  transform-origin: left;
+  justify-self: start;
+}
+
+
+.stat {
+  grid-row: 2; 
+  grid-column: 1 / 5; 
+}
+
+.prob {
+  grid-row: 6;
+  grid-column: 1 / 5;
+}
+
+.sol {
+  grid-row: 14;
+  grid-column: 1 / 3;
+}
+
+.rage {
+  grid-row: 14;
+  grid-column: 4 / 5;
+}
+
+.dish {
+  font-family: "Inter", sans-serif; 
+  font-weight: 600; 
+  font-size: 20pt; 
+  line-height: 16pt; 
+  letter-spacing: 2.64px; 
+  margin-top: 12px;
+  text-align: left; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  color: #105708; 
+  transform: scaleX(0.9); scaleY(0.8);
+  transform-origin: left;
+  justify-self: start;
+}
+
+.ww {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.ll {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.hh {
+  grid-row: 3;
+  grid-column: 3;
+}
+
+.cc {
+  grid-row: 3;
+  grid-column: 4;
+}
+
+.soin {
+  grid-row: 7;
+  grid-column: 1;
+}
+
+.coex {
+  grid-row: 7;
+  grid-column: 2;
+}
+
+.fosu {
+  grid-row: 7;
+  grid-column: 3;
+}
+
+.ghg {
+  grid-row: 10;
+  grid-column: 1;
+  margin-top: 18px;
+}
+
+.inin {
+  grid-row: 10;
+  grid-column: 2;
+  margin-top: 18px;
+}
+
+.lile {
+  grid-row: 10;
+  grid-column: 3;
+  margin-top: 18px;
+}
+
+.ao {
+  grid-row: 7;
+  grid-column: 4;
+  letter-spacing: -.01em;
+  transform: translateY(-24px);
+}
+
+.dips {
+  grid-row: 9;
+  grid-column: 4;
+  letter-spacing: -.01em;
+  margin-top:48px;
+}
+
+.mp {
+  grid-row: 15;
+  grid-column: 1;
+  letter-spacing: -1px;
+}
+
+.rr {
+  grid-row: 15;
+  grid-column: 2;
+  letter-spacing: -1px;
+}
+
+.ia {
+  grid-row: 15;
+  grid-column: 3;
+  letter-spacing: -1.5px;
+}
+
+.serving {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18pt;
+}
+
+
+.description {
+  font-family: "Inter", sans-serif; 
+  font-weight: 300;
+  font-size: 15pt;
+  line-height: 14pt;
+  margin-top: 12px;
+  text-align: left; 
+  white-space: nowrap; 
+  overflow: visible; 
+  text-overflow: ellipsis; 
+  color: #105708; 
+  transform: scaleX(0.6) scaleY(0.7);
+  transform-origin: left top;
+  align-self: start;
+  justify-self: start;
+}
+
+.statww {
+  grid-row: 4 / 5;
+  grid-column: 1;
+}
+
+.statll {
+  grid-row: 4 / 5;
+  grid-column: 2;
+}
+
+.stathh {
+  grid-row: 4 / 5;
+  grid-column: 3;
+}
+
+.statcc {
+  grid-row: 4 / 5;
+  grid-column: 4;
+}
+
+.probsoin {
+  grid-row: 8 / 9;
+  grid-column: 1;
+}
+
+.probcoex {
+  grid-row: 8 / 9;
+  grid-column: 2;
+}
+
+.probfosu {
+  grid-row: 8 / 9;
+  grid-column: 3;
+}
+
+.probghg {
+  grid-row: 11 / 12;
+  grid-column: 1;
+  margin-top: 18px;
+}
+
+.probinin {
+  grid-row: 11 / 12;
+  grid-column: 2;
+  margin-top: 18px;
+}
+
+.problile {
+  grid-row: 11/12;
+  grid-column: 3;
+  margin-top: 18px;
+}
+
+.aolist {
+  grid-row: 7;
+  grid-column: 4;
+  margin-top: 24px;
+  line-height: 28px;
+  letter-spacing: .15em;
+}
+
+.dipslist {
+  grid-row: 10;
+  grid-column: 4;
+  margin-top: 32px;
+  line-height: 28px;
+  letter-spacing: .15em;
+}
+
+.solmp {
+  grid-row: 16;
+  grid-column: 1;
+}
+
+.solrr {
+  grid-row: 16;
+  grid-column: 2;
+}
+
+.solia {
+  grid-row: 16;
+  grid-column: 3;
+}
+
+.rages {
+  grid-row: 15;
+  grid-column: 4;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+}
+
+.cn {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #fdf3b6; !important 
+  weight: 300; 
+  letter-spacing: 0.1em;
+  grid-row: 17; 
+  grid-column: 1 / 5; 
+  text-align: center; 
+  margin-top: 70px; 
+  margin-left: 24px;
+}
+
+.worsen {
+  font-family: "Inter", sans-serif; /
+  font-weight: 300;
+  font-size: 11pt;
+  font-style:italic;
+  line-height: 14pt;
+  margin-top: -6px;
+  letter-spacing: .1em;
+  text-align: left; 
+  white-space: nowrap; 
+  overflow: visible; 
+  text-overflow: ellipsis; 
+  color: #105708; 
+  transform: scaleX(0.6) scaleY(0.7);
+  transform-origin: left top;
+  align-self: start;
+  justify-self: start;
+  grid-row: 13;
+  grid-column: 4;
+}
+
